@@ -1,0 +1,19 @@
+for h in range(24):
+    if h < 10:
+        h = "0" + str(h)
+    for m in range(60):
+        if m < 10:
+            m = "0" + str(h)
+        for s in range(60):
+            if s < 10:
+                s = "0" + str(s)
+            print(h, m, s, sep = ":")
+
+a = [9, 6, 3, 2, 5, 8, 1, 4, 7]
+n= len(a)
+for i in range(n - 1):
+    for j in range(n - 1 - i):
+        if a[j] > a[j + 1]:
+            a[j], a[j + 1] = a[j + 1], a[j]
+        print(*a)
+    print('-' * 20)
