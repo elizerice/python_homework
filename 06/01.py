@@ -1,8 +1,13 @@
 list_1 = set()
-while True:
-    num = input('введи числа с 1 листа')
-    if num == "":
-        break
-    list.add(num)
-
-print(list)
+list_2 = set()
+num = input()
+while num:
+    list_1.add(int(num))
+    num = input()
+num = input()
+while num:
+    list_2.add(int(num))
+    num = input()
+intersection = list_1.intersection(list_2)
+print(intersection)
+    
