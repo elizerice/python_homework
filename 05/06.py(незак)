@@ -1,0 +1,12 @@
+num = 0
+sum = 0
+count = 0
+number = int()
+while number != 0:
+    number = input()
+    count += 1
+    sum += number
+    if num == 0:
+        if sum >= 10:
+            print(count)
+            
