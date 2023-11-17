@@ -1,9 +1,9 @@
 num = 0
-sum = 0
+sum = int()
 count = 0
-number = int()
+number = int(1)
 while number != 0:
-    number = input()
+    number = int(input())
     count += 1
     sum += number
     if num == 0:
