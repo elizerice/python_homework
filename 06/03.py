@@ -8,8 +8,7 @@ for i in range(lang_1):
 for i in range(lang_2):
     student = str(input())
     lang_2_list.add(student)
-if (lang_1_list ^ lang_2_list) != 0:
+if not lang_1_list ^ lang_2_list:
     print('no')
-    print(lang_1_list ^ lang_2_list)
 else:
     print(len(lang_1_list ^ lang_2_list))
