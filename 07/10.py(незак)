@@ -1,0 +1,12 @@
+step = int(input())
+phrase = str(input())
+answer = str()
+for i in range(len(phrase)):
+    symbol = phrase[i]
+    if symbol != ' ':
+        char = ord(symbol) + step
+        symbol = chr(char)
+    else:
+        symbol = ' '
+    answer += symbol
+print(answer)
