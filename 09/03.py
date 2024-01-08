@@ -1,8 +1,8 @@
 sum = int(input('Введите количество строк: '))
 print('Введите строки')
-list = []
+list_ = []
 for _ in range(sum):
-    list.append(input())
+    list_.append(input())
 num = int(input('введите номер буквы: '))
-for i in range(len(list)):
-   print(list[i][num-1], end="") 
+for i in range(len(list_)):
+   print(list_[i][num-1], end="")
