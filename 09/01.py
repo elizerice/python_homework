@@ -1,7 +1,7 @@
 sum = int(input('Введите количество товаров: '))
 print('Введите покупки')
-list = []
+list_ = []
 for _ in range(sum):
-    list.append(input())
+    list_.append(input())
 for x in range(len(list)):
-    print(list[x])
+    print(list_[x])
