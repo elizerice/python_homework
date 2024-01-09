@@ -1,10 +1,10 @@
 num = int(input())
-list = []
+list_ = []
 for i in range(num):
-    list.append(input())
+    list_.append(input())
 for i in range(num):
     for j in range(i + 1, num):
-        if list[i] > list[j]:
-            list[i], list[j] = list[j], list[i]
+        if list_[i] > list_[j]:
+            list_[i], list_[j] = list_[j], list_[i]
 for i in range(num):
-    print(list[i])
+    print(list_[i])
