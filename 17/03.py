@@ -5,4 +5,4 @@ sort_list = sorted(example_list) # создается новый отсорти�
 example_list.sort() # id остается прежним, список сортируется
 
 print(sort_list, id(sort_list)) #sorted(), id
-print(example_list, id(example_list)) #.sort
+print(example_list, id(example_list)) #.sort, id
