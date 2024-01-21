@@ -2,8 +2,10 @@ import string
 import random
 def generate_password(m):
     symbols = string.ascii_letters + string.digits
-    symbols = "".join(symb for symb in symbols if symb not in "Ll1iIOo0")
-    return "".join(random.choice(symbols) for _ in range(m))
+    no_symbs = "Ll1iIOo0"
+    for symb in no_symbs:
+        symbols = symbols.replace(symb, "")
+    return "".join(random.sample(symbols, m))
 
 def main(n, m):
     passwords = list()
