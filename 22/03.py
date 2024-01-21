@@ -9,7 +9,7 @@ def generate_password(m):
 
 
 def main(n, m):
-    passwords = list()
+    passwords = set()
     while len(passwords) < n:
-        passwords.append(generate_password(m))
-    return passwords
+        passwords.add(generate_password(m))
+    return list(passwords)
