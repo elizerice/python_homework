@@ -1,0 +1,5 @@
+r, g, b = input().split()
+opposite_r = 255 - int(r)
+opposite_g = 255 - int(g)
+opposite_b = 255 - int(b)
+print(opposite_r, opposite_g, opposite_b)
